@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohamed Ismail Mohamed Ishak - Cybersecurity Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="header">
+        <div>
+            <img src="profile.jpg" alt="Portfolio Profile Picture">
+        </div>
+        <div>
+            <h1><span style="font-size: 1.1rem">Portfolio of</span><br>Mohamed Ismail Mohamed Ishak</h1>
+            <h3 class="theme-font">About Me</h3>
+            <hr>
+            <p>I am Mohamed Ishak, a dedicated Cyber Threat Analyst with over three years of experience in cybersecurity and a passion for web development. Currently, I am working as a Level 2 Cyber Threat Analyst at AKATI Sekurity, where I specialize in optimizing SIEM/EDR tools, automating SOC workflows, and mentoring junior analysts. My educational foundation includes a BSc (Hons) in Cyber Security from the University of Gloucestershire, graduating with First Class Honours, and I am presently pursuing a Master of Cyber Security at the University of Malaya. I thrive on tackling security challenges and aspire to contribute to building robust and innovative security solutions.</p>
+        </div>
+    </div>
+
+    <div class='portfolio'>
+
+        <div class="head">
+            <div class="tabs">
+                <div class="tab" id="career">Career Objective</div>
+                <div class="tab" id="learning">Learning Journey</div>
+                <div class="tab" id="technical">Technical Skills</div>
+                <div class="tab" id="certifications">Certifications and Training</div>
+                <div class="tab" id="project">Project Experience</div>
+                <div class="tab" id="contact">Contact Information</div>
+                
+            </div>
+
+            <script>
+                
+                tabs = document.getElementsByClassName('tab')
+                Array.from(tabs).forEach((tab) => {
+                    
+                    tab.addEventListener('click', function(){
+                        Array.from(document.querySelectorAll('.portfolio .body div')).forEach(element => {
+                            element.style.display = 'none'
+                        });
+                        
+                        x = document.getElementsByClassName(tab.id)[0]
+                        if (x.style.display === "none") {
+                            x.style.display = "block";
+                        } else {
+                            x.style.display = "none";
+                        }
+
+                        window.scrollTo({ top: (document.body.scrollHeight / 3), behavior: 'smooth' })
+
+                    })
+                });
+                
+            </script>
+        </div>
+    
+        <div class="body">
+            <div class="career">
+                <h3>Career Objective</h3>
+                <hr>
+                <br>
+                <p>My ultimate goal is to establish myself as a distinguished SOC Manager with expertise in integrating automation and advanced threat detection methodologies to design and maintain robust, scalable, and resilient cybersecurity infrastructures. I am driven to optimize Security Operations Center (SOC) workflows by aligning human expertise with cutting-edge technologies to ensure swift and effective incident response. A key aspect of my vision is to foster a culture of growth and collaboration by mentoring and empowering aspiring cybersecurity professionals, enabling them to excel in the field. Furthermore, I aim to actively contribute to the development of innovative security strategies and frameworks that address emerging cyber threats, ultimately safeguarding organizations while driving advancements in the cybersecurity domain.</p>
+            </div>
+            <div class="learning">
+                <h3>Learning Journey</h3>
+                <hr>
+                <br>
+                <p>My journey in cybersecurity began with a foundational interest in networking and programming, which evolved into a full-fledged career in protecting organizations from cyber threats. Alongside my cybersecurity expertise, I am a passionate web developer with proficiency in PHP, JavaScript, and HTML, which has enhanced my problem-solving capabilities and technical versatility. Over the years, I have developed advanced skills in SIEM management, threat hunting, and automation, applying these to solve real-world security challenges.</p>
+            </div>
+            <div class="technical">
+                <h3>Technical Skills</h3>
+                <hr>
+                <br>
+                <h4>Cybersecurity Tools & Platforms:</h4>
+                
+                <ul>
+                    <li>SIEM Platforms: Stellar Cyber Open XDR, Splunk, LogRhythm, Securonix – Extensive experience in configuring and managing SIEM tools for comprehensive threat detection and response.</li>
+                    <li>Vulnerability Management: Proficient with Rapid7 Nexpose for vulnerability scanning, reporting, and remediation guidance.</li>
+                    <li>OSINT Tools: Experience with tools such as Shodan, Maltego, and VirusTotal for gathering threat intelligence and assessing external exposure.</li>
+                    <li>General SOC Tools: Knowledgeable in EDR solutions, packet analysis tools like Wireshark, and log management utilities.</li>
+                </ul>
+
+                <h4>Programming & Automation:</h4>
+                <ul>
+                    <li>Languages: Python (for automation scripting and custom tool development), HTML, JavaScript.</li>
+                    <li>Automation Frameworks: Developed custom automation scripts to streamline SOC processes, including alert prioritization and enrichment of security events.</li>
+                    <li>Integration Experience: Expertise in integrating diverse log sources into SIEM platforms and creating automated workflows for ticketing systems.</li>
+                </ul>
+
+                <h4>Networking Concepts:</h4>
+                <ul>
+                    <li>Networking Fundamentals: CCNA-certified knowledge of TCP/IP, routing protocols, and network security concepts.</li>
+                    <li>Cloud Environments: Familiar with cloud security monitoring and configurations in Microsoft Azure.</li>
+                </ul>
+                <h4>Incident Response and Threat Analysis:</h4>
+                
+                <ul>
+                    <li>Advanced understanding of attack vectors, incident investigation, threat actor identification, and mitigation strategies.</li>
+                    <li>Proficient in analyzing logs from firewalls, Windows/Linux servers, network sensors, and cloud endpoints.</li>
+                </ul>
+            </div>
+            <div class="certifications">
+                <h3>Certifications and Training</h3>
+                <hr>
+                <br>
+                <ul>
+                    <li>Microsoft Azure Administrator Associate (AZ-104) – Completed March 2022.</li>
+                    <li>Cisco Certified Network Associate (CCNA) – Completed November 2019.</li>
+                    <li>Certified in Cybersecurity (CC) – (ISC)², December 2022 (Valid until December 2025).</li>
+                    <li>CompTIA Security+ ce Certification – Completed December 2022 (Valid until December 2025).</li>
+                </ul>
+                <p>Additionally, I have attended the following workshops and training:</p>
+                <ul>
+                    <li>Stellar Cyber Certified Associate – March 2021</li>
+                    <li>Certified Security Operations Center Practitioner – Feb 2022</li>
+                </ul>
+            </div>
+            <div class="project">
+                <h3>Project Experience</h3>
+                <hr>
+                <br>
+                <h4 class="theme-font">Project 1: Implementing Automation to Ease SOC Workload</h4>
+                <p>Objective: To reduce SOC analyst fatigue and streamline incident management processes by automating repetitive tasks and ticketing workflows.</p>
+                <p>Tools Used: Stellar Cyber SIEM, Jira Ticketing Systems.</p>
+                <p>Methodology:</p>
+                <ul>
+                    <li>Configured Stellar Cyber SIEM to generate enriched alerts by correlating logs from multiple sources.</li>
+                    <li>Automated the creation of incident tickets by integrating SIEM-generated alerts with Jira ticketing system.</li>
+                    <li>Created a rule-based system within the SIEM to filter out false positives, ensuring analysts only received actionable alerts.</li>
+                    <li>Established automated reporting templates to provide daily and monthly security event summaries.</li>
+                </ul>
+                <p>Outcome:</p>
+                <ul>
+                    <li>Reduced analyst workload by eliminating manual triaging and repetitive tasks.</li>
+                    <li>Improved SLA adherence for faster resolution times for critical incidents.</li>
+                    <li>Enhanced accuracy of escalated incidents, significantly reducing false positives and improving analyst satisfaction.</li>
+                </ul>
+                <br>
+                <h4 class="theme-font">Project 2: Enhancing SOC Efficiency through Vulnerability Management</h4>
+                <p>Objective: To improve an organization's security posture by identifying and remediating vulnerabilities across its network.</p>
+                <p>Tools Used: Rapid7 Nexpose</p>
+                <p>Methodology:</p>
+                <ul>
+                    <li>Conducted comprehensive vulnerability scans using Rapid7 Nexpose, identifying critical exposures.</li>
+                    <li>Worked closely with the IT team to implement patch management and secure misconfigured assets.</li>
+                    <li>Correlated vulnerability scan results with SIEM logs to prioritize remediation based on real-time threat activity.</li>
+                    <li>Performed regular audits to ensure mitigated vulnerabilities remained resolved and introduced no new risks.</li>
+                </ul>
+                <p>Outcome:</p>
+                <ul>
+                    <li>Successfully mitigated high-priority vulnerabilities in a short timeframe, significantly enhancing the organization's security posture.</li>
+                    <li>Strengthened the organization's defense against external threats and improved compliance with security standards.</li>
+                </ul>
+                
+            </div>
+            <div class="contact">
+                <h3>Contact Information</h3>
+                <hr>
+                <br>
+                <ul>
+                    <li>LinkedIn: <a href="https://linkedin.com/in/iamishak">linkedin.com/in/iamishak</a></li>
+                    <li>GitHub: <a href="https://github.com/mimishak-um">github.com/mimishak-um</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    
+    
+    
+
+
+
+    
+    
+    
+
+    
+    
+    
+
+    
+</body>
+</html>
+
+<!-- 
+# Cybersecurity Portfolio
+
+Welcome to my Cybersecurity Portfolio! This repository provides a high-level overview of my journey, skills, and projects in the field of cybersecurity.
+
+---
+
+## 📌 About Me
+
+I am **Ishak Ismail**, a Cyber Threat Analyst with over three years of experience. I specialize in threat detection, SIEM management, and SOC process optimization. Passionate about solving security challenges, I aim to create robust cybersecurity solutions.
+
+---
+
+## 🛠 Technical Skills
+
+- Expertise in SIEM platforms (Stellar Cyber, Splunk, LogRhythm, Securonix).
+- Proficiency in Python for automation and scripting.
+- Networking (CCNA-certified) and cloud security (Azure Admin Certified).
+
+---
+
+## 🎓 Certifications
+
+- Microsoft Azure Administrator Associate (AZ-104)  
+- Cisco Certified Network Associate (CCNA)  
+- Certified in Cybersecurity (CC) – (ISC)²  
+- CompTIA Security+  
+
+---
+
+## 🚀 Projects
+
+- **SOC Automation:** Automated ticketing workflows and alert triage, reducing workload by 40%.  
+- **Vulnerability Management:** Mitigated high-priority vulnerabilities, achieving a 95% reduction.
+
+---
+
+## 🎯 Career Objective
+
+I aim to lead SOC operations, integrating automation and advanced threat intelligence to build resilient cybersecurity infrastructures.
+
+---
+
+## 📬 Contact
+
+- **LinkedIn:** [linkedin.com/in/iamishak](https://lk.linkedin.com/in/iamishak)  
+- **Email:** (Add your email here)  
+- **GitHub:** (Add your GitHub profile link here)  
+
+Explore the sections to learn more about my skills and contributions. Let’s collaborate to make the digital world safer! 🌐
+
+-->
