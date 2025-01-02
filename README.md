@@ -6,7 +6,7 @@ Welcome to my Cybersecurity Portfolio! This repository provides a high-level ove
 
 ## 📌 About Me
 
-I am **Ishak Ismail**, a Cyber Threat Analyst with over three years of experience. I specialize in threat detection, SIEM management, and SOC process optimization. Passionate about solving security challenges, I aim to create robust cybersecurity solutions.
+I am **Mohamed Ishak**, a Cyber Threat Analyst with over three years of experience. I specialize in threat detection, SIEM management, and SOC process optimization. Passionate about solving security challenges, I aim to create robust cybersecurity solutions.
 
 ---
 
